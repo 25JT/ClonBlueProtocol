@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'MotivaSans-Light';
+    src: url('../assets/fuentes/MotivaSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MotivaSans-Regular';
+    src: url('../assets/fuentes/MotivaSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

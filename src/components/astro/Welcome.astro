@@ -1,11 +1,34 @@
 ---
-import fondo1 from "../../assets/fondos/home_pre_bg.webp"
+
+import prLogo from "../../assets/fondos/home_pre_logo.webp"
+import ImgSteam from "../../assets/botonesTiendas/bt_steam.png"
+import ImgApple from "../../assets/botonesTiendas/bt_apple_pre.png"
+import ImgPlay from "../../assets/botonesTiendas/bt_google_pre.png"
+import ImgEpic from "../../assets/botonesTiendas/bt_epic.png"
 ---
 <div id="pagina-Container" class="overflow-hidden h-screen w-full">
-    <section  id="0" class=" section h-screen flex items-center justify-center bg-teal-500 text-white text-4xl font-bold">
-        <img src={fondo1.src} alt="fondo" class="w-full h-full object-cover" />
+    <section  id="0" class=" section h-screen flex items-center justify-center text-white text-4xl font-bold">
+        <div>
+            <div class=" bg-[url('../assets/fondos/home_pre_bg.webp')] h-screen w-screen bg-cover bg-center">
+                <div >
+                    <img src={prLogo.src} width="80%" height="80%" alt="logo" class=" xl:top-1/2 xl:left-1/2 transform  xl:translate-y-[85%] xl:translate-x-[16%] lg:translate-y-[150%] lg:translate-x-[14%] md:translate-y-[200%] md:translate-x-[14%]" />
+                </div>
+                <div class=" xl:top-1/2 xl:left-1/2 transform xl:translate-x-[29%] xl:translate-y-[110%] lg:translate-y-[180%] lg:translate-x-[25%] md:translate-y-[215%] md:translate-x-[25%] ">
+                    <iframe src="https://store.steampowered.com/widget/3681810?&utm_medium=web" frameborder="0" class=" xl:w-[800px] xl:h-[200px] lg:w-[600px] lg:h-[200px] md:w-[550px] md:h-[200px] " ></iframe>
+                </div>
+                <div class="flex gap-5 m-40  xl:translate-x-[24%] xl:translate-y-[100%] lg:translate-y-[490%] lg:translate-x-[17%] md:translate-y-[750%] md:translate-x-[14%]">
+                    <a href="https://store.steampowered.com/app/3681810/Blue_Protocol_Star_Resonance/" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgSteam.src} alt="steam" class="w-auto xl:h-14 lg:h-10 md:h-9 object-cover"  /></a>
+                    <a href="https://store.epicgames.com/es-MX/p/blue-protocol-star-resonance-27bff9" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgEpic.src} alt="epic" class="w-auto xl:h-14 lg:h-10 md:h-9 object-cover" /></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.bpsr.apj" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgPlay.src} alt="play" class="w-auto xl:h-14 lg:h-10 md:h-8 object-cover" /></a>
+                    <a href="https://apps.apple.com/us/app/blue-protocol-star-resonance/id6744962482" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgApple.src} alt="apple" class="w-auto xl:h-14 lg:h-10 md:h-9 object-cover" /></a>
+                </div> 
+            </div>
+        </div>
     </section>
-    <section  id="1" class=" section h-screen flex items-center justify-center bg-red-500 text-white text-4xl font-bold">LOTERIA</section>
+
+    <section  id="1" class=" section h-screen flex items-center justify-center bg-red-500 text-white text-4xl font-bold">LOTERIA
+   
+    </section>
     <section  id="2" class=" section h-screen flex items-center justify-center bg-cyan-500 text-white text-4xl font-bold">MILESTONE</section>
     <section  id="3" class=" section h-screen flex items-center justify-center bg-blue-500 text-white text-4xl font-bold">NUEVO</section>
     <section  id="4" class=" section h-screen flex items-center justify-center bg-green-500 text-white text-4xl font-bold">CLASS</section>

@@ -5,33 +5,181 @@ import ImgSteam from "../../assets/botonesTiendas/bt_steam.png"
 import ImgApple from "../../assets/botonesTiendas/bt_apple_pre.png"
 import ImgPlay from "../../assets/botonesTiendas/bt_google_pre.png"
 import ImgEpic from "../../assets/botonesTiendas/bt_epic.png"
+import ImgEstar from "../../assets/botonesTiendas/linxing.png"
+import ImgDis from "../../assets/botonesTiendas/share_dis.png"
+import ImgYou from "../../assets/botonesTiendas/share_yg.png"
+import Imgtik from "../../assets/botonesTiendas/tiktok.png"
+import Imgkaw from "../../assets/botonesTiendas/kwai.png"
+import Imgx from "../../assets/botonesTiendas/share_tt.png"
+import ImgLine from "../../assets/fondos/line1.png"
+import Imgjiguo from "../../assets/fondos/jihuo_news.jpeg"
+import Imgline2 from "../../assets/fondos/line2.webp"
+import ImgSensasion1 from "../../assets/fondos/cr_gift.png"
+import ImgSensasion2 from "../../assets/fondos/look_up.jpeg"
 ---
-<div id="pagina-Container" class="overflow-hidden h-screen w-full">
-    <section  id="0" class=" section h-screen flex items-center justify-center text-white text-4xl font-bold">
-        <div>
-            <div class=" bg-[url('../assets/fondos/home_pre_bg.webp')] h-screen w-screen bg-cover bg-center">
-                <div >
-                    <img src={prLogo.src} width="80%" height="80%" alt="logo" class=" xl:top-1/2 xl:left-1/2 transform  xl:translate-y-[85%] xl:translate-x-[16%] lg:translate-y-[150%] lg:translate-x-[14%] md:translate-y-[200%] md:translate-x-[14%]" />
-                </div>
-                <div class=" xl:top-1/2 xl:left-1/2 transform xl:translate-x-[29%] xl:translate-y-[110%] lg:translate-y-[180%] lg:translate-x-[25%] md:translate-y-[215%] md:translate-x-[25%] ">
-                    <iframe src="https://store.steampowered.com/widget/3681810?&utm_medium=web" frameborder="0" class=" xl:w-[800px] xl:h-[200px] lg:w-[600px] lg:h-[200px] md:w-[550px] md:h-[200px] " ></iframe>
-                </div>
-                <div class="flex gap-5 m-40  xl:translate-x-[24%] xl:translate-y-[100%] lg:translate-y-[490%] lg:translate-x-[17%] md:translate-y-[750%] md:translate-x-[14%]">
-                    <a href="https://store.steampowered.com/app/3681810/Blue_Protocol_Star_Resonance/" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgSteam.src} alt="steam" class="w-auto xl:h-14 lg:h-10 md:h-9 object-cover"  /></a>
-                    <a href="https://store.epicgames.com/es-MX/p/blue-protocol-star-resonance-27bff9" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgEpic.src} alt="epic" class="w-auto xl:h-14 lg:h-10 md:h-9 object-cover" /></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.bpsr.apj" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgPlay.src} alt="play" class="w-auto xl:h-14 lg:h-10 md:h-8 object-cover" /></a>
-                    <a href="https://apps.apple.com/us/app/blue-protocol-star-resonance/id6744962482" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgApple.src} alt="apple" class="w-auto xl:h-14 lg:h-10 md:h-9 object-cover" /></a>
-                </div> 
-            </div>
-        </div>
-    </section>
 
-    <section  id="1" class=" section h-screen flex items-center justify-center bg-red-500 text-white text-4xl font-bold">LOTERIA
-   
-    </section>
-    <section  id="2" class=" section h-screen flex items-center justify-center bg-cyan-500 text-white text-4xl font-bold">MILESTONE</section>
-    <section  id="3" class=" section h-screen flex items-center justify-center bg-blue-500 text-white text-4xl font-bold">NUEVO</section>
-    <section  id="4" class=" section h-screen flex items-center justify-center bg-green-500 text-white text-4xl font-bold">CLASS</section>
-    <section  id="5" class=" section h-screen flex items-center justify-center bg-yellow-500 text-white text-4xl font-bold">CONTENIDO DE MAGNA</section>
-    <section  id="6" class=" section h-screen flex items-center justify-center bg-orange-500 text-white text-4xl font-bold">CARACTERISTICA</section>
-</div>
+<!-- capa de decoraciones fijas -->
+<div class="fixed inset-0 z-10 pointer-events-none">
+    <!-- lados -->
+    <div class="absolute left-[2%] w-[1px] h-full bg-gray-200 opacity-70"></div>
+    <div class="absolute left-[98%] w-[1px] h-70 bg-gray-200 opacity-70"></div>
+    <div class="absolute top-[80%] left-[98%] w-[1px] h-70 bg-gray-200 opacity-70"></div>
+  
+    <!-- arriba y abajo -->
+    <div class="absolute top-[9.5%] w-screen h-[1px] bg-gray-200 opacity-70"></div>
+     <div class="absolute top-[96.5%] w-screen h-[1px] bg-gray-200 opacity-70"></div>
+    <!-- estrellas -->
+    <img src={ImgEstar.src} alt="estUpLeft"
+         class="absolute top-[8%] left-[1%] w-[30px] h-[30px] opacity-90">
+    <img src={ImgEstar.src} alt="estUpRight"
+         class="absolute top-[8%] right-[1%] w-[30px] h-[30px] opacity-90">
+    <img src={ImgEstar.src} alt="estDowLeft"
+         class="absolute bottom-[2%] left-[1%] w-[30px] h-[30px] opacity-90">
+    <img src={ImgEstar.src} alt="estDowRight"
+         class="absolute bottom-[2%] right-[1%] w-[30px] h-[30px] opacity-90">
+  
+    <!-- redes sociales (permitir clicks → pointer-events-auto) -->
+    <div class="absolute top-1/3 right-5 flex flex-col gap-4 pointer-events-auto">
+      <a href="https://x.com/BPSR_Official" target="_blank">
+        <img src={Imgx.src} alt="X"
+             class="w-10 h-10 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+      </a>
+      <a href="https://www.youtube.com/@BPSR_Official" target="_blank">
+        <img src={ImgYou.src} alt="youtube"
+             class="w-10 h-10 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+      </a>
+      <a href="https://discord.com/invite/starresonance" target="_blank">
+        <img src={ImgDis.src} alt="discord"
+             class="w-10 h-10 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+      </a>
+      <a href="https://www.tiktok.com/@bpsr_official" target="_blank">
+        <img src={Imgtik.src} alt="tiktok"
+             class="w-10 h-10 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+      </a>
+      <a href="https://www.kwai.com/@BPSR_Official" target="_blank">
+        <img src={Imgkaw.src} alt="kwai"
+             class="w-10 h-10 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer">
+      </a>
+    </div>
+  </div>
+ 
+<!-- seciones que se activan con scroll -->
+    <div id="pagina-Container" class="overflow-hidden h-screen w-full">
+        <!-- seccion inicio -->
+        <section  id="0" class=" section h-screen flex items-center justify-center text-white text-4xl font-bold">
+            <div>
+                <div class=" bg-[url('../assets/fondos/home_pre_bg.webp')] h-screen w-screen bg-cover bg-center">
+                    <div >
+                        <img src={prLogo.src} width="80%" height="80%" alt="logo" class=" xl:top-1/2 xl:left-1/2 transform  xl:translate-y-[70%] xl:translate-x-[16%] lg:translate-y-[150%] lg:translate-x-[14%] md:translate-y-[200%] md:translate-x-[14%]" />
+                    </div>
+                    <div class=" xl:top-1/2 xl:left-1/2 transform xl:translate-x-[29%] xl:translate-y-[80%] lg:translate-y-[180%] lg:translate-x-[25%] md:translate-y-[215%] md:translate-x-[25%] ">
+                        <iframe src="https://store.steampowered.com/widget/3681810?&utm_medium=web" frameborder="0" class=" xl:w-[800px] xl:h-[200px] lg:w-[600px] lg:h-[200px] md:w-[550px] md:h-[200px] " ></iframe>
+                    </div>
+                    <div class="flex gap-5 m-40  xl:translate-x-[24%] xl:translate-y-[1%] lg:translate-y-[490%] lg:translate-x-[17%] md:translate-y-[750%] md:translate-x-[14%]">
+                        <a href="https://store.steampowered.com/app/3681810/Blue_Protocol_Star_Resonance/" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgSteam.src} alt="steam" class="w-auto xl:h-14 lg:h-10 md:h-9 object-cover"  /></a>
+                        <a href="https://store.epicgames.com/es-MX/p/blue-protocol-star-resonance-27bff9" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgEpic.src} alt="epic" class="w-auto xl:h-14 lg:h-10 md:h-9 object-cover" /></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.bpsr.apj" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgPlay.src} alt="play" class="w-auto xl:h-14 lg:h-10 md:h-8 object-cover" /></a>
+                        <a href="https://apps.apple.com/us/app/blue-protocol-star-resonance/id6744962482" class="hover:scale-110 transition-all duration-200 ease-in-out  cursor-pointer"><img src={ImgApple.src} alt="apple" class="w-auto xl:h-14 lg:h-10 md:h-9 object-cover" /></a>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    
+        <!-- seccion nuevo -->
+        <section id="1" class="section h-screen w-full flex items-center justify-center text-white text-4xl font-bold relative overflow-hidden">
+          <!-- Fondo difuminado -->
+          <div class="absolute inset-0 w-full h-full z-0">
+            <div class="w-full h-full bg-[url('../assets/fondos/bg_nuevo.webp')] bg-cover bg-center blur-[10px]"></div>
+          </div>
+        
+          <!-- Noticias -->
+          <div class="z-10 grid grid-cols-2 gap-20 w-[65%] h-[70%]">
+            
+            <!-- Columna izquierda -->
+            <div class="col-span-1">
+              <div class="bg-gradient-to-b from-[#FAEED5] via-[#FAEED5] to-[#eee7d4] border-8 border-[#DBA367] w-full h-full flex flex-col space-y-6 p-4">
+
+                
+                <!-- Sección 1 -->
+                <div class="grid grid-cols-2 gap-5 w-full">
+                  <div class="flex items-center justify-center bg-[#963031]">
+                    <p class="font-[TimesNewRoman]">NUEVO</p>
+                  </div>
+                  <div class="flex items-end">
+                    <img src={ImgLine.src} alt="" class="w-full h-auto"/>
+                  </div>
+                </div>
+                
+                <!-- Sección 2 -->
+                <div class="p-2 w-full">
+                  <img src={Imgjiguo.src} alt="" class="w-full h-auto border-[12px] border-[#fcf9f2]"/>
+                </div>
+                
+                <!-- Sección 3 -->
+                <div class="p-2 text-2xl text-black space-y-2 font-[NewTimeRoman]">
+                  <div class="w-full bg-[#DBA367] flex items-center space-x-2 p-1">
+                    <img src={ImgEstar.src} alt="" class="w-5 h-5"/>
+                    <p class="text-[#f1dec9]">Star Resonance</p>
+                  </div>
+                  <div class="w-full bg-[#DBA367] flex items-center space-x-2 p-1">
+                    <img src={ImgEstar.src} alt="" class="w-5 h-5"/>
+                    <p class="text-[#f1dec9]">Próximamente</p>
+                  </div>
+                  <div class="w-full bg-[#DBA367] flex items-center space-x-2 p-1">
+                    <img src={ImgEstar.src} alt="" class="w-5 h-5"/>
+                    <p class="text-[#f1dec9]">Mantenimiento</p>
+                  </div>
+                  <div class="w-full bg-[#DBA367] flex items-center space-x-2 p-1">
+                    <img src={ImgEstar.src} alt="" class="w-5 h-5"/>
+                    <p class="text-[#f1dec9]">Nuevos personajes</p>
+                  </div>
+                </div>
+                
+                <!-- Sección 4 -->
+                <div class="text-right">
+                  <img src={Imgline2.src} alt="line" class="inline-block w-4/5 h-auto"/>
+                </div>
+        
+              </div>
+            </div>
+            
+            <!-- Columna derecha -->
+            <div class="col-span-1">
+              <div class="bg-gradient-to-b from-[#FAEED5] via-[#FAEED5] to-[#eee7d4] border-8 border-[#DBA367] w-full h-full flex flex-col justify-evenly">
+                
+                <!-- Sección 1 -->
+                <div class="flex items-center justify-center bg-[#963031] p-2 w-[80%]">
+                  <p class="font-[TimesNewRoman]">NUEVOS ASPECTOS</p>
+                </div>
+                
+                <!-- Sección 2 -->
+                <div class="p-2 w-full">
+                  <img src={ImgSensasion1.src} alt="" class="w-full h-auto border-[12px] border-[#fcf9f2]"/>
+                </div>
+                
+                <!-- Sección 3 -->
+                <div class="p-2 w-full">
+                  <img src={ImgSensasion2.src} alt="" class="w-full h-auto border-[12px] border-[#fcf9f2]"/>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <!-- seccion loteria -->
+        <section  id="2" class=" section h-screen flex items-center justify-center bg-red-500 text-white text-4xl font-bold">LOTERIA</section>
+        <!-- seccion milestone -->
+        <section  id="3" class=" section h-screen flex items-center justify-center bg-cyan-500 text-white text-4xl font-bold">MILESTONE</section>
+        <!-- seccion class -->
+        <section  id="4" class=" section h-screen flex items-center justify-center bg-green-500 text-white text-4xl font-bold">CLASS</section>
+        <!-- seccion contenido de magnas -->
+        <section  id="5" class=" section h-screen flex items-center justify-center bg-yellow-500 text-white text-4xl font-bold">CONTENIDO DE MAGNA</section>
+        <!-- seccion caracteristica -->
+        <section  id="6" class=" section h-screen flex items-center justify-center bg-orange-500 text-white text-4xl font-bold">CARACTERISTICA</section>
+    </div>
+    
+
+
+

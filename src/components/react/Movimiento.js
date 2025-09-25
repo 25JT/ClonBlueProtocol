@@ -1,7 +1,7 @@
 function Movimiento() {
     const container = document.getElementById("pagina-Container");
     const sections = Array.from(container.getElementsByClassName("section"));
-    let currentSection = 0;
+    let currentSection = 1;
     let isScrolling = false;
 
     // Función para actualizar el menú activo

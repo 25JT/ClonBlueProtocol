@@ -26,6 +26,13 @@ import ImgAdvancedCooking from "../../assets/fondos/loteria/gift_fang.png"
 import ImgCharacter from "../../assets/fondos/loteria/gift_gem.png"
 import Muñeca1 from "../../assets/fondos/loteria/dec.png"
 import Muñeca2 from "../../assets/fondos/loteria/dec01.png"
+import TituloMilestone from "../../assets/fondos/mile_title.png"
+import LineMilestone from "../../assets/fondos/mile_line4_n.webp"
+import Premio1 from "../../assets/fondos/mile_5_yes.webp"
+import Premio2 from "../../assets/fondos/mile_10_yes.webp"
+import Premio3 from "../../assets/fondos/mile_20_yes.webp"
+import Premio4 from "../../assets/fondos/mile_30_yes.webp"
+import Premio5 from "../../assets/fondos/mile_50_no.webp"
 ---
 
 <!-- capa de decoraciones fijas -->
@@ -302,7 +309,34 @@ import Muñeca2 from "../../assets/fondos/loteria/dec01.png"
 
 
         <!-- seccion milestone -->
-        <section  id="3" class=" section min-h-screen w-full flex items-center justify-center text-red text-4xl font-bold relative overflow-hidden">MILESTONE</section>
+        <section  id="3" class=" section min-h-screen w-full flex items-center justify-center text-red text-4xl font-bold relative overflow-hidden">
+          <div>
+            <div class="absolute inset-0 w-full h-full z-0">
+              <div class="w-full h-full bg-[url('../assets/fondos/mile_bg.webp')] bg-cover bg-center "></div>
+            </div>
+            <div>
+                  <!-- Contenido -->
+          <div class="relative z-10 flex flex-col  w-full px-4">
+            <!-- Título -->
+            <div class="flex flex-wrap  justify-center text-3xl md:text-4xl font-bold ">
+              <img src= {TituloMilestone.src} alt="TituloMilestone" class="xl:mb-[700px] mb-[450px]" width="962.688px" />
+           
+            
+              <img src={LineMilestone.src}  class=" absolute top-[50%]" alt="LineMilestone"/>
+              <div class="flex flex-row justify-center items-center">
+                <img src= {Premio1.src} alt="Premio 1"  class="xl:w-72 lg:w-52 w-42 absolute xl:top-[60%] xl:left-[1%]  lg:top-[65%] lg:left-[4%]"/>
+                <img src= {Premio2.src} alt="Premio 2"  class="xl:w-72 lg:w-52 w-42 absolute xl:top-[55%] xl:left-[20%] lg:top-[60%] lg:left-[22%]"/>
+                <img src= {Premio3.src} alt="Premio 3"  class="xl:w-72 lg:w-52 w-42 absolute xl:top-[60%] xl:left-[39%] lg:top-[65%] lg:left-[41%]"/>
+                <img src= {Premio4.src} alt="Premio 4" class="xl:w-72 lg:w-52 w-42 absolute xl:top-[65%] xl:left-[57%] lg:top-[70%] lg:left-[60%]"/>
+                <img src= {Premio5.src} alt="Premio 5" class="xl:w-72 lg:w-52 w-42 absolute xl:top-[60%] xl:left-[78%] lg:top-[65%] lg:left-[78%]"/>
+              </div>
+              
+              </div>
+            </div>
+          
+          </div>  
+        </div>
+        </section>
         <!-- seccion class -->
         <section  id="4" class=" section min-h-screen w-full flex items-center justify-center text-amber-600 text-4xl font-bold relative overflow-hidden">CLASS</section>
         <!-- seccion contenido de magnas -->

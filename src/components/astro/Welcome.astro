@@ -33,6 +33,9 @@ import Premio2 from "../../assets/fondos/mile_10_yes.webp"
 import Premio3 from "../../assets/fondos/mile_20_yes.webp"
 import Premio4 from "../../assets/fondos/mile_30_yes.webp"
 import Premio5 from "../../assets/fondos/mile_50_no.webp"
+import ClassCarousel from "../react/clases.jsx"
+import Contenido from "../react/contenido.jsx"
+
 ---
 
 <!-- capa de decoraciones fijas -->
@@ -338,9 +341,13 @@ import Premio5 from "../../assets/fondos/mile_50_no.webp"
         </div>
         </section>
         <!-- seccion class -->
-        <section  id="4" class=" section min-h-screen w-full flex items-center justify-center text-amber-600 text-4xl font-bold relative overflow-hidden">CLASS</section>
+        <section  id="4" class=" section min-h-screen w-full flex items-center justify-center text-black text-4xl font-bold relative overflow-hidden">
+          <ClassCarousel client:idle />
+        </section>
         <!-- seccion contenido de magnas -->
-        <section  id="5" class=" section min-h-screen w-full flex items-center justify-center text-sky-600 text-4xl font-bold relative overflow-hidden">CONTENIDO DE MAGNA</section>
+        <section  id="5" class=" section min-h-screen w-full flex items-center justify-center  text-4xl font-bold relative overflow-hidden">
+          <Contenido/>
+        </section>
         <!-- seccion caracteristica -->
         <section  id="6" class=" section min-h-screen w-full flex items-center justify-center text-green-600 text-4xl font-bold relative overflow-hidden">CARACTERISTICA</section>
     </div>

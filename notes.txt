@@ -9,3 +9,107 @@ epic
 https://store.epicgames.com/es-MX/p/blue-protocol-star-resonance-27bff9
 steam 
 https://store.steampowered.com/app/3681810/Blue_Protocol_Star_Resonance/
+
+
+Heacy Guardian
+Stonewall style , block Style
+StormBlade
+Iaido Style, Moonblade style
+Wind Knight
+Overdrive style , Aerial Style
+Marksman
+Beastmaster Style,  falconry style
+Frost Mage
+Frost Lance Style, Ray Style
+Verdant Oracle
+Thornlash style, Healing Style
+Shield Knight
+Bulwark Style, , radiant Guard style
+Beat Performer
+Dissonance Style Concerto Style
+
+
+
+//frost mage
+import FrostLogo from "../../assets/imgClass/Frost Mage/Frost_type.png";
+import FrostBg from "../../assets/imgClass/Frost Mage/Frost_bg.jpg";
+import FrostVideo from "../../assets/imgClass/Frost Mage/Frost_mp4.mp4";
+import FrostVideo2 from "../../assets/imgClass/Frost Mage/WindKnight_video_0.mp4";
+import FrostFaceColor from "../../assets/imgClass/Frost Mage/Frost_color.png";
+import FrostFaceGray from "../../assets/imgClass/Frost Mage/Frost_gray.png";
+import frostCargaBg from "../../assets/imgClass/Frost Mage/WindKnight_sumb_0.jpg";
+
+//Verde Oracle
+import VerdeLogo from "../../assets/imgClass/Verde Oracle/Verdant_type.png";
+import VerdeBg from "../../assets/imgClass/Verde Oracle/Verdant_bg.jpg";
+import VerdeVideo from "../../assets/imgClass/Verde Oracle/Verdant_mp4.mp4";
+import VerdeVideo2 from "../../assets/imgClass/Verde Oracle/VerdantOracle_video_0.mp4";
+import VerdeFaceColor from "../../assets/imgClass/Verde Oracle/Verdant_color.png";
+import VerdeFaceGray from "../../assets/imgClass/Verde Oracle/Verdant_gray.png";
+import VerdeCargaBg from "../../assets/imgClass/Verde Oracle/VerdantOracle_sumb_0.jpg";
+
+//Heacy Guardian
+import HeavyBg from "../../assets/imgClass/Heavy Guardian/Heavy_bg.jpg";
+import HeavyColor from "../../assets/imgClass/Heavy Guardian/Heavy_color.png";
+import HeavyGray from "../../assets/imgClass/Heavy Guardian/Heavy_gray.png";
+import HeavyMp4 from "../../assets/imgClass/Heavy Guardian/Heavy_mp4.mp4";
+import HeavyType from "../../assets/imgClass/Heavy Guardian/Heavy_type.png";
+import HeavySumb from "../../assets/imgClass/Heavy Guardian/HeavyGuardian_sumb_0.jpg";
+import HeavyVideo2 from "../../assets/imgClass/Heavy Guardian/HeavyGuardian_video_0.mp4";
+
+
+//StormBlade
+import StormbladeBg from "../../assets/imgClass/Stormblade/Stormblade_bg.jpg";
+import StormbladeColor from "../../assets/imgClass/Stormblade/Stormblade_color.png";
+import StormbladeGray from "../../assets/imgClass/Stormblade/Stormblade_gray.png";
+import StormbladeMp4 from "../../assets/imgClass/Stormblade/Stormblade_mp4.mp4";
+import StormbladeType from "../../assets/imgClass/Stormblade/Stormblade_type.png";
+import StormbladeSumb from "../../assets/imgClass/Stormblade/Stormblade_sumb_0.jpg";
+import StormbladeVideo2 from "../../assets/imgClass/Stormblade/Stormblade_video_0.mp4";
+//Wind Knight
+import WindBg from "../../assets/imgClass/wind/Wind_bg.jpg";
+import WindColor from "../../assets/imgClass/wind/Wind_color.png";
+import WindGray from "../../assets/imgClass/wind/Wind_gray.png";
+import WindMp4 from "../../assets/imgClass/wind/Wind_mp4.mp4";
+import WindType from "../../assets/imgClass/wind/Wind_type.png";
+import WindSumb from "../../assets/imgClass/wind/FrostMage_sumb_0.jpg";
+import WindVideo2 from "../../assets/imgClass/wind/FrostMage_video_0.mp4";
+
+//Marksman
+import MarksmanBg from "../../assets/imgClass/Marksman/Marksman_bg.jpg";
+import MarksmanColor from "../../assets/imgClass/Marksman/Marksman_color.png";
+import MarksmanGray from "../../assets/imgClass/Marksman/Marksman_gray.png";
+import MarksmanMp4 from "../../assets/imgClass/Marksman/Marksman_mp4.mp4";
+import MarksmanType from "../../assets/imgClass/Marksman/Marksman_type.png";
+import MarksmanSumb from "../../assets/imgClass/Marksman/Marksman_sumb_0.jpg";
+import MarksmanVideo2 from "../../assets/imgClass/Marksman/Marksman_video_0.mp4";
+
+//Shield Knight
+import ShieldBg from "../../assets/imgClass/Shield Kingh/Shield_bg.jpg";
+import ShieldColor from "../../assets/imgClass/Shield Kingh/Shield_color.png";
+import ShieldGray from "../../assets/imgClass/Shield Kingh/Shield_gray.png";
+import ShieldMp4 from "../../assets/imgClass/Shield Kingh/Shield_mp4.mp4";
+import ShieldType from "../../assets/imgClass/Shield Kingh/Shield_type.png";
+import ShieldSumb from "../../assets/imgClass/Shield Kingh/Shield_Knight_sumb_0.jpg";
+import ShieldVideo2 from "../../assets/imgClass/Shield Kingh/Shield_Knight_video_0.mp4";
+//Beat Performer
+
+// Soul
+import SoulType from "../../assets/imgClass/Soul/Soul_type.png";
+import SoulBg from "../../assets/imgClass/Soul/Soul_bg2.jpg";
+import SoulColor from "../../assets/imgClass/Soul/Soul_color.png";
+import SoulGray from "../../assets/imgClass/Soul/Soul_gray.png";
+import SoulMp4 from "../../assets/imgClass/Soul/Soul_mp42.mp4";
+import SoulSumb from "../../assets/imgClass/Soul/Soul_sumb_0.webp";
+import SoulVideo2 from "../../assets/imgClass/Soul/Soul_video_0.mp4";
+
+//anexos
+import StartWhite from "../../assets/imgClass/xing_white.png";
+import StartBlack from "../../assets/imgClass/xing_black.png";
+import buttonLeft from "../../assets/imgClass/left.png";
+import buttonRight from "../../assets/imgClass/right.png";
+import bgBlue from "../../assets/imgClass/video-bg.webp"
+
+
+
+

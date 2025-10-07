@@ -4,6 +4,7 @@ import LogoblueWhite from "../../assets/Logos/logo_white2_2.png";
 import butonMusic from "../../assets/menubotones/menu-btn-music_stop.png";
 import logoBlack from "../../assets/Logos/logo_black2_2.png";
 import fondoBg from "../../assets/menubotones/menu-bg.webp"
+
 ---
 
 <nav class="fixed  bg-gray-50 z-50  w-screen overflow-hidden">
@@ -35,7 +36,9 @@ import fondoBg from "../../assets/menubotones/menu-bg.webp"
   
       <!-- Columna 3: botones a la derecha -->
       <div class="flex justify-end items-center gap-4">
-        <img src={butonMusic.src} alt="boton" class="w-auto h-6 hover:scale-110 transition-all duration-300 ease-in-out  cursor-pointer" />
+        <button id="musica">
+          <img src={butonMusic.src} alt="boton" class="w-auto h-6 hover:scale-110 transition-all duration-300 ease-in-out  cursor-pointer " id="imgMusica"  />
+        </button>
         <button class="hover:scale-110 transition-all duration-300 ease-in-out  cursor-pointer px-5 py-1 border rounded-full 2xl:text-[14px] xl:text-[12px] lg:text-[12px] md:text-[12px] text-[10px] font-[TimesNewRoman]">Pre-Registro</button>
         <button class="hover:scale-110 transition-all duration-300 ease-in-out  cursor-pointer px-5 py-1 border rounded-full 2xl:text-[14px] xl:text-[12px] lg:text-[12px] md:text-[12px] text-[10px] font-[TimesNewRoman]">Ingresar</button>
       </div>
@@ -55,5 +58,37 @@ import fondoBg from "../../assets/menubotones/menu-bg.webp"
             });
         });
     });
+
 </script>
 
+<script>
+  import { img } from "framer-motion/client";
+import Impcancion from "../../assets/musica/bg_music.mp3"
+import butonMusicOn from "../../assets/menubotones/menu-btn-music_play.png"
+import butonMusicOff from "../../assets/menubotones/menu-btn-music_stop.png"
+
+
+  const cancion =  new Audio(Impcancion)
+
+      if(window.localStorage.getItem=== null){
+        window.localStorage.setItem("activa", "false");
+      }
+
+      document.getElementById("musica")?.addEventListener("click", () => {
+        if(window.localStorage.getItem("activa") === "false"){
+          cancion.play();
+          const img = document.getElementById("imgMusica");
+          img.src = butonMusicOn.src;
+          img.classList.add("animate-spin-slow");
+          
+          window.localStorage.setItem("activa", "true");
+        }else{
+          cancion.pause();
+          const img = document.getElementById("imgMusica");
+          img.src = butonMusicOff.src;
+          img.classList.remove("animate-spin-slow");
+          window.localStorage.setItem("activa", "false");
+        }
+      })
+
+</script>

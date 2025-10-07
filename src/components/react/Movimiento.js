@@ -1,7 +1,7 @@
 function Movimiento() {
     const container = document.getElementById("pagina-Container");
     const sections = Array.from(container.getElementsByClassName("section"));
-    let currentSection = 3;
+    let currentSection = 0;
     let isScrolling = false;
 
     // Función para actualizar el menú activo
@@ -25,7 +25,7 @@ function Movimiento() {
         
         setTimeout(() => {
             isScrolling = false;
-        }, 700); // Duración del scroll
+        }, 200); // Duración del scroll
     }
 
     // Manejar clic en los elementos del menú

@@ -35,7 +35,7 @@ import Premio4 from "../../assets/fondos/mile_30_yes.webp"
 import Premio5 from "../../assets/fondos/mile_50_no.webp"
 import ClassCarousel from "../react/clases.jsx"
 import Contenido from "../react/contenido.jsx"
-
+import Carousel from "../react/caracteristicas.jsx"
 ---
 
 <!-- capa de decoraciones fijas -->
@@ -341,15 +341,19 @@ import Contenido from "../react/contenido.jsx"
         </div>
         </section>
         <!-- seccion class -->
-        <section  id="4" class=" section min-h-screen w-full flex items-center justify-center text-black text-4xl font-bold relative overflow-hidden">
-          <ClassCarousel client:idle />
+        <section  id="4" class=" section min-h-screen w-full flex items-center justify-center text-4xl font-bold relative overflow-hidden">
+          <ClassCarousel client:visible />
         </section>
         <!-- seccion contenido de magnas -->
         <section  id="5" class=" section min-h-screen w-full flex items-center justify-center  text-4xl font-bold relative overflow-hidden">
-          <Contenido client:idle/>
+          <Contenido client:visible/>
         </section>
         <!-- seccion caracteristica -->
-        <section  id="6" class=" section min-h-screen w-full flex items-center justify-center text-green-600 text-4xl font-bold relative overflow-hidden">CARACTERISTICA</section>
+        <section  id="6" class=" section min-h-screen w-full flex flex-col items-center justify-center  text-4xl font-bold relative overflow-hidden">
+          <Carousel client:visible/>
+      
+        </section>
+ 
     </div>
     
 
